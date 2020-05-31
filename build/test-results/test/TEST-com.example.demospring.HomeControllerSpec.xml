@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.demospring.HomeControllerSpec" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-05-26T05:25:01" hostname="MacBook-Pro-de-Isagani.local" time="0.617">
+  <properties/>
+  <testcase name="test something" classname="com.example.demospring.HomeControllerSpec" time="0.617"/>
+  <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.3.0.RELEASE)
+
+2020-05-26 07:25:02.054  INFO 13104 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-26 07:25:02.222  INFO 13104 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2020-05-26 07:25:02.222  INFO 13104 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2020-05-26 07:25:02.234  INFO 13104 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 11 ms
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
