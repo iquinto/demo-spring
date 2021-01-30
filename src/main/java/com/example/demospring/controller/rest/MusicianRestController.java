@@ -1,8 +1,7 @@
-package com.example.demospring.controller;
+package com.example.demospring.controller.rest;
 
 
 import com.example.demospring.model.Musician;
-import com.example.demospring.repository.MusicianRepository;
 import com.example.demospring.service.MusicianService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

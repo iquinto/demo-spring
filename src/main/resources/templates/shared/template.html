@@ -18,17 +18,17 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Song <span class="sr-only">(current)</span></a>
-                    </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Band</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Musician</a>
+                        <a class="nav-link" th:href="@{/musicians/}">Musician</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Album</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a  class="nav-link" th:href="@{/}">Song <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Band</a>
                     </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">

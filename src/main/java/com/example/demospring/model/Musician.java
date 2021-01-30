@@ -19,7 +19,7 @@ public class Musician {
     @NotNull
     @Column(nullable = false)
     private String name;
-    
+
     @NotNull
     @Column(nullable = false)
     private Date birth;

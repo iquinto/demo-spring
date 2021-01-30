@@ -2,11 +2,11 @@ server:
   port: 8080
   servlet:
     #Spring Boot, by default, serves content on the root context path (“/”).
-    context-path: /demospring
+    context-path: /musicbox
 
 spring:
   application:
-    name: demospring
+    name: musicbox
   jpa:
     hibernate:
       ddl-auto: update
@@ -18,7 +18,14 @@ spring:
     username: postgres
     password: 23-Manila
 
+  # Templates reloading during development
+  thymeleaf:
+    prefix: file:src/main/resources/templates/
+    cache: false
 
+  # Static resources reloading during development
+  resources:
+    static-locations: file:src/main/resources/static/
 
 
 #ribbon:
