@@ -1,25 +1,25 @@
 SET datestyle = DMY;
 
-INSERT INTO MUSICIAN VALUES(1,'James Hetfieldd','04-08-1963',NULL,'M','Catalan');
-INSERT INTO MUSICIAN VALUES(2,'Paul Rodgers','17-12-1949',NULL,'M','English');
-INSERT INTO MUSICIAN VALUES(3,'Kirk Hammet','18-11-1962',NULL,'M','American');
-INSERT INTO MUSICIAN VALUES(4,'Mick Jagger','26-07-1943',NULL,'M','English');
-INSERT INTO MUSICIAN VALUES(5,'Joey Ramone','19-05-1951','15-04-2001','M','American');
-INSERT INTO MUSICIAN VALUES(6,'Lars Ulrich','26-12-1963',NULL,'M','Danish');
-INSERT INTO MUSICIAN VALUES(7,'Cliff Burton','10-02-1962','27-09-1986','M','American');
-INSERT INTO MUSICIAN VALUES(8,'Simon Kirke','28-07-1949',NULL,'M','English');
-INSERT INTO MUSICIAN VALUES(9,'Keith Richards','18-12-1943',NULL,'M','English');
-INSERT INTO MUSICIAN VALUES(11,'Carles Sabater','21-09-1962','13-02-1999','M','Catalan');
-INSERT INTO MUSICIAN VALUES(12,'Pep Sala','17-07-1960',NULL,'M','Catalan');
-INSERT INTO MUSICIAN VALUES(13,'Llu�s Gavald�','15-04-1963',NULL,'M','Catalan');
-INSERT INTO MUSICIAN VALUES(14,'Joan Reig','16-03-1963',NULL,'M','Catalan');
-INSERT INTO MUSICIAN VALUES(15,'Falin C�ceres','27-07-1963',NULL,'M','Catalan');
-INSERT INTO MUSICIAN VALUES(16,'Ana Torroja','28-12-1959',NULL,'F','Spanish');
-INSERT INTO MUSICIAN VALUES(17,'Nacho Cano','26-02-1963',NULL,'M','Spanish');
-INSERT INTO MUSICIAN VALUES(18,'Jos� Mar�a Cano','21-02-1959',NULL,'M','Spanish');
-INSERT INTO MUSICIAN VALUES(19,'David Mu�oz','10-01-1976',NULL,'M','Catalan');
-INSERT INTO MUSICIAN VALUES(20,'Jos� Manuel Mu�oz','13-11-1978',NULL,'M','Catalan');
-INSERT INTO MUSICIAN VALUES(21,'Dani Mart�n','19-02-1977',NULL,'M','Spanish');
+INSERT INTO MUSICIAN(name, surname, birth, year_death, gender,nationality) VALUES('James', 'Hetfieldd','04-08-1963',NULL,'M','Catalan');
+INSERT INTO MUSICIAN(name, surname, birth, year_death, gender,nationality) VALUES('Paul', 'Rodgers','17-12-1949',NULL,'M','English');
+INSERT INTO MUSICIAN(name, surname, birth, year_death, gender,nationality) VALUES('Kirk', ' Hammet','18-11-1962',NULL,'M','American');
+INSERT INTO MUSICIAN(name, surname, birth, year_death, gender,nationality) VALUES('Mick','Jagger','26-07-1943',NULL,'M','English');
+INSERT INTO MUSICIAN(name, surname, birth, year_death, gender,nationality) VALUES('Joey', 'Ramone','19-05-1951','15-04-2001','M','American');
+INSERT INTO MUSICIAN(name, surname, birth, year_death, gender,nationality) VALUES('Lars', 'Ulrich','26-12-1963',NULL,'M','Danish');
+INSERT INTO MUSICIAN(name, surname, birth, year_death, gender,nationality) VALUES('Cliff', 'Burton','10-02-1962','27-09-1986','M','American');
+INSERT INTO MUSICIAN(name, surname, birth, year_death, gender,nationality) VALUES('Simon', 'Kirke','28-07-1949',NULL,'M','English');
+INSERT INTO MUSICIAN(name, surname, birth, year_death, gender,nationality) VALUES('Keith', 'Richards','18-12-1943',NULL,'M','English');
+INSERT INTO MUSICIAN(name, surname, birth, year_death, gender,nationality) VALUES('Carles','Sabater','21-09-1962','13-02-1999','M','Catalan');
+INSERT INTO MUSICIAN(name, surname, birth, year_death, gender,nationality) VALUES('Pep', 'Sala','17-07-1960',NULL,'M','Catalan');
+INSERT INTO MUSICIAN(name, surname, birth, year_death, gender,nationality) VALUES('Lluís', 'Gavaldó','15-04-1963',NULL,'M','Catalan');
+INSERT INTO MUSICIAN(name, surname, birth, year_death, gender,nationality) VALUES('Joan', 'Reig','16-03-1963',NULL,'M','Catalan');
+INSERT INTO MUSICIAN(name, surname, birth, year_death, gender,nationality) VALUES('Falin', 'Cáceres','27-07-1963',NULL,'M','Catalan');
+INSERT INTO MUSICIAN(name, surname, birth, year_death, gender,nationality) VALUES('Ana', 'Torroja','28-12-1959',NULL,'F','Spanish');
+INSERT INTO MUSICIAN(name, surname, birth, year_death, gender,nationality) VALUES('Nacho', 'Cano','26-02-1963',NULL,'M','Spanish');
+INSERT INTO MUSICIAN(name, surname, birth, year_death, gender,nationality) VALUES('José María', 'Cano','21-02-1959',NULL,'M','Spanish');
+INSERT INTO MUSICIAN(name, surname, birth, year_death, gender,nationality) VALUES('David', 'Muñoz','10-01-1976',NULL,'M','Catalan');
+INSERT INTO MUSICIAN(name, surname, birth, year_death, gender,nationality) VALUES('José', 'Manuel Munoz','13-11-1978',NULL,'M','Catalan');
+INSERT INTO MUSICIAN(name, surname, birth, year_death, gender,nationality) VALUES('Dani', 'Martín','19-02-1977',NULL,'M','Spanish');
 
 
 /* BAND */

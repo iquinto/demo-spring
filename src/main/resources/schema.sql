@@ -8,16 +8,16 @@ SET datestyle = DMY;
 
 
 CREATE TABLE MUSICIAN (
-	id_musician SMALLINT,
-	name VARCHAR(255) NOT NULL,
-	birth DATE NOT NULL,
-	year_death DATE,
-	gender VARCHAR(255) NOT NULL,
-	nationality VARCHAR(255) NOT NULL,
-CONSTRAINT PK_MUSICIAN PRIMARY KEY(id_musician),
-CONSTRAINT DATE_VALID CHECK (year_death IS NULL OR birth < year_death),
-CONSTRAINT GENDER CHECK (gender IN ('M','F')));
-
+  id SERIAL,
+  name VARCHAR(50) NOT NULL,
+  surname VARCHAR(50),
+  birth DATE NOT NULL,
+  year_death DATE,
+  gender VARCHAR(255) NOT NULL,
+  nationality VARCHAR(50) NOT NULL,
+  CONSTRAINT PK_MUSICIAN PRIMARY KEY(id),
+  CONSTRAINT DATE_VALID CHECK (year_death IS NULL OR birth < year_death))
+/*
 CREATE TABLE BAND (
 	id_band SMALLINT,
 	name VARCHAR(255) NOT NULL,
@@ -84,3 +84,4 @@ CREATE TYPE report_band_type AS (
 	t_name_oldest_alive VARCHAR(255)
 );
 
+*/

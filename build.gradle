@@ -16,11 +16,19 @@ repositories {
 }
 
 dependencies {
+	developmentOnly("org.springframework.boot:spring-boot-devtools")
 	implementation 'org.springframework.boot:spring-boot-starter-actuator'
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	compileOnly("org.springframework.boot:spring-boot-devtools")
+
+	//lombok per getters / setters / constructors
+	compileOnly 'org.projectlombok:lombok'
+	compile 'org.projectlombok:lombok'
+	annotationProcessor 'org.projectlombok:lombok'
+	compile group: 'javax.validation', name: 'validation-api', version: '2.0.1.Final'
+
 
 	runtimeOnly 'com.h2database:h2'
 	runtimeOnly 'org.postgresql:postgresql'
@@ -34,6 +42,11 @@ dependencies {
 	testRuntime 'org.postgresql:postgresql:42.2.12'
 	testImplementation('org.springframework.boot:spring-boot-starter-test')
 	testImplementation("org.spockframework:spock-spring:1.2-groovy-2.5")
+	testCompileOnly  'org.projectlombok:lombok'   // to access getters from test classes
+	testAnnotationProcessor 'org.projectlombok:lombok' // to access getters from test classes
+
+	testCompileOnly  'org.projectlombok:lombok'   // to access getters from test classes
+	testAnnotationProcessor 'org.projectlombok:lombok' // to access getters from test classes
 }
 
 sourceSets {
@@ -59,4 +72,5 @@ check.dependsOn integrationTest
 configurations {
 	integrationImplementation.extendsFrom testImplementation
 	integrationRuntime.extendsFrom testRuntime
+
 }
