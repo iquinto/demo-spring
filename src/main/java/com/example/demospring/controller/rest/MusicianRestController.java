@@ -14,14 +14,14 @@ import javax.validation.constraints.NotNull;
 import java.util.List;
 
 @RestController
-@RequestMapping(value = "/rest/musicians")
+@RequestMapping(value = "/rest/musician")
 public class MusicianRestController {
 
     @Autowired
     MusicianService musicianService;
     private static final Logger log = LoggerFactory.getLogger(MusicianRestController.class);
 
-    @RequestMapping(value = "/", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+    @RequestMapping(value = {"","/"}, method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
     public List<Musician> musicianList() {
         List<Musician> musicianList = musicianService.findAll();
         log.info("[m:musicianList] " + musicianList);

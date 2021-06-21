@@ -29,6 +29,7 @@
                 <tr>
                     <th scope="col">Id</th>
                     <th scope="col">Name</th>
+                    <th scope="col">Surname</th>
                     <th scope="col">Gender</th>
                     <th scope="col">Nationality</th>
                 </tr>
@@ -37,6 +38,7 @@
                 <tr th:each="musician: ${musicianList}">
                     <td> <a th:href="@{/musicians/show/{id}(id=${musician.id})}" th:text="${musician.id}">Musician</a> </td>
                     <td th:text="${musician.name}"></td>
+                    <td th:text="${musician.surname}"></td>
                     <td th:text="${musician.gender}"></td>
                     <td th:text="${musician.nationality}"></td>
                 </tr>
@@ -44,7 +46,6 @@
             </table>
         </div>
     </div>
-
 
     <footer th:replace="shared/template :: footer"></footer>
 

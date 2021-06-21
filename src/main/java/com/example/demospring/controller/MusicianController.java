@@ -15,7 +15,7 @@ import javax.validation.constraints.NotNull;
 import java.util.List;
 
 @Controller
-@RequestMapping(value = "/musicians")
+@RequestMapping(value = "/musician")
 public class MusicianController {
 
     private static final Logger log = LoggerFactory.getLogger(MusicianController.class);
@@ -23,14 +23,15 @@ public class MusicianController {
     @Autowired
     MusicianService musicianService;
 
-    @RequestMapping(value = "/", method = RequestMethod.GET)
+    @RequestMapping(value = {"/","/list"}, method = RequestMethod.GET)
     public String index(Model model) {
+        log.info("[m:index] list all musicians");
+
+
         List<Musician> musicianList = musicianService.findAll();
         model.addAttribute("musicianList", musicianList);
         return "musician/list";
     }
-
-
 
     @RequestMapping(value = "/show/{id}", method = RequestMethod.GET)
     public String show(@PathVariable @NotNull Long id, Model model) {

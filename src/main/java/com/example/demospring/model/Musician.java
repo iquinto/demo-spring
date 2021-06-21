@@ -20,6 +20,8 @@ public class Musician {
     @Column(nullable = false)
     private String name;
 
+    private String surname;
+
     @NotNull
     @Column(nullable = false)
     private Date birth;

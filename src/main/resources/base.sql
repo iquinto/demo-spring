@@ -1,7 +1,7 @@
 --DROP SCHEMA IF EXISTS public CASCADE;
 --CREATE SCHEMA public;
 CREATE TABLE BAND (
-	id BIGSERIAL,
+    id SERIAL,
 	name VARCHAR(255) NOT NULL,
 	year_formed VARCHAR(4),
 	year_dissolution VARCHAR(4),
